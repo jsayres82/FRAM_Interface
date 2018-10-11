@@ -4,6 +4,280 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f2" displayName="app" projectFiles="true">
+        <logicalFolder name="f1" displayName="system_config" projectFiles="true">
+          <logicalFolder name="f1" displayName="default" projectFiles="true">
+            <logicalFolder name="f2" displayName="bsp" projectFiles="true">
+              <itemPath>../src/system_config/default/bsp/bsp.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="framework" projectFiles="true">
+              <logicalFolder name="f1" displayName="gfx" projectFiles="true">
+                <logicalFolder name="f1" displayName="driver" projectFiles="true">
+                  <logicalFolder name="f1" displayName="controller" projectFiles="true">
+                    <logicalFolder name="f1" displayName="lcc" projectFiles="true">
+                      <itemPath>../src/system_config/default/framework/gfx/driver/controller/lcc/drv_gfx_lcc_generic.h</itemPath>
+                    </logicalFolder>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hal" projectFiles="true">
+                  <itemPath>../src/system_config/default/framework/gfx/hal/gfx_config.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="system" projectFiles="true">
+                <logicalFolder name="f1" displayName="devcon" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_local.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>../src/system_config/default/framework/system/devcon/sys_devcon.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="third_party" projectFiles="true">
+              <logicalFolder name="f1" displayName="gfx" projectFiles="true">
+                <logicalFolder name="f1" displayName="emwin" projectFiles="true">
+                  <logicalFolder name="f3" displayName="config" projectFiles="true">
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/config/GUIConf.h</itemPath>
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/config/LCDConf.h</itemPath>
+                  </logicalFolder>
+                  <logicalFolder name="f2" displayName="gui" projectFiles="true">
+                    <logicalFolder name="f1" displayName="src" projectFiles="true">
+                      <itemPath>../src/system_config/default/third_party/gfx/emwin/gui/src/emwin_gui_static_local.h</itemPath>
+                    </logicalFolder>
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/gui/emwin_gui_static.h</itemPath>
+                  </logicalFolder>
+                  <logicalFolder name="f1" displayName="touch" projectFiles="true">
+                    <logicalFolder name="f1" displayName="src" projectFiles="true">
+                      <itemPath>../src/system_config/default/third_party/gfx/emwin/touch/src/emwin_touch_static_local.h</itemPath>
+                    </logicalFolder>
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/touch/emwin_touch_static.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>../src/system_config/default/system_config.h</itemPath>
+            <itemPath>../src/system_config/default/system_definitions.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../src/app.h</itemPath>
+        <itemPath>../src/HwConfig.h</itemPath>
+        <itemPath>../src/SPI_FRAM.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f1" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="i2c" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/driver/i2c/src/drv_i2c_local.h</itemPath>
+              <itemPath>../../../../framework/driver/i2c/src/drv_i2c_variant_mapping.h</itemPath>
+              <itemPath>../../../../framework/driver/i2c/src/drv_i2c_local_bb.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_device_pic32m.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_compatibility.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_mapping.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_bb_a.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_bb_a_compatibility.h</itemPath>
+            <itemPath>../../../../framework/driver/i2c/drv_i2c_bb.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="input" projectFiles="true">
+            <logicalFolder name="f1" displayName="touch" projectFiles="true">
+              <logicalFolder name="f1" displayName="mxt336t" projectFiles="true">
+                <itemPath>../../../../framework/driver/input/touch/mxt336t/drv_mxt336t.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="spi" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../framework/driver/spi/src/dynamic/drv_spi_internal.h</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../framework/driver/spi/src/drv_spi_sys_queue.h</itemPath>
+              <itemPath>../../../../framework/driver/spi/src/drv_spi_sys_queue_local_fifo.h</itemPath>
+              <itemPath>../../../../framework/driver/spi/src/drv_spi_variant_mapping.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../framework/driver/spi/drv_spi.h</itemPath>
+            <itemPath>../../../../framework/driver/spi/drv_spi_definitions.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../framework/driver/driver.h</itemPath>
+          <itemPath>../../../../framework/driver/driver_common.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="gfx" projectFiles="true">
+          <logicalFolder name="f2" displayName="emwin" projectFiles="true">
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_DCache.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_DCache_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Dist.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_FlexColor_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Lin_Opt_16.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Lin_Opt_24.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Lin_Opt_32.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Lin_Opt_8.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Lin_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_NoOpt_1_8.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_S1D13517_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_Template.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_TemplateI.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUIDRV_TemplateI_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_GCache_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/BUTTON.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/BUTTON_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/CALENDAR.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/CHECKBOX.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/CHECKBOX_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/CHOOSECOLOR.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/CHOOSEFILE.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/DIALOG.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/DIALOG_Intern.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/DROPDOWN.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/DROPDOWN_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/EDIT.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/EDIT_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/FRAMEWIN.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/FRAMEWIN_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/Global.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GRAPH.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GRAPH_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI__BiDi2_Brackets_800.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI__BiDi2_Types_800.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_ARRAY.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_ARRAY_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_BMP_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_ConfDefaults.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_Debug.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_FontIntern.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_GIF_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_HOOK.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_JPEG_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_SetOrientation.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_SetOrientationCX.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_SPRITE_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_Type.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_Version.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/GUI_VNC.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/HEADER.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/HEADER_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/ICONVIEW.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/ICONVIEW_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/IMAGE.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/IMAGE_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/IP_FS.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/KNOB.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/KNOB_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LCD.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LCD_ConfDefaults.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LCD_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LCD_Protected.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LCD_SIM.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTBOX.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTBOX_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTVIEW.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTVIEW_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTWHEEL.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/LISTWHEEL_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MENU.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MENU_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MESSAGEBOX.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MULTIEDIT.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MULTIPAGE.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/MULTIPAGE_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/PROGBAR.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/PROGBAR_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/RADIO.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/RADIO_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SCROLLBAR.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SCROLLBAR_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SEGGER.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SLIDER.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SLIDER_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SPINBOX.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SPINBOX_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SWIPELIST.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/SWIPELIST_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/TEXT.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/TEXT_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/TREEVIEW.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/TREEVIEW_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/WIDGET.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/WINDOW_Private.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/WM.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/WM_GUI.h</itemPath>
+            <itemPath>../../../../bin/framework/gfx/segger_emwin/inc/WM_Intern.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="hal" projectFiles="true">
+            <itemPath>../../../../framework/gfx/hal/gfx.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_color.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_common.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_context.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_default_impl.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_display.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_driver_interface.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_hal.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_interface.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_layer.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_pixel_buffer.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_processor_interface.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_rect.h</itemPath>
+            <itemPath>../../../../framework/gfx/hal/inc/gfx_util.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="osal" projectFiles="true">
+          <itemPath>../../../../framework/osal/osal.h</itemPath>
+          <itemPath>../../../../framework/osal/osal_definitions.h</itemPath>
+          <itemPath>../../../../framework/osal/osal_impl_basic.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="system" projectFiles="true">
+          <logicalFolder name="f4" displayName="clk" projectFiles="true">
+            <itemPath>../../../../framework/system/clk/sys_clk.h</itemPath>
+            <itemPath>../../../../framework/system/clk/sys_clk_compatibility.h</itemPath>
+            <itemPath>../../../../framework/system/clk/sys_clk_mapping.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="common" projectFiles="true">
+            <itemPath>../../../../framework/system/common/sys_common.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_module.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_buffer.h</itemPath>
+            <itemPath>../../../../framework/system/common/sys_queue.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="debug" projectFiles="true">
+            <itemPath>../../../../framework/system/debug/sys_debug.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="dma" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/dma/src/sys_dma_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../framework/system/dma/sys_dma.h</itemPath>
+            <itemPath>../../../../framework/system/dma/sys_dma_definitions.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f7" displayName="input" projectFiles="true">
+            <itemPath>../../../../framework/system/input/sys_input.h</itemPath>
+            <itemPath>../../../../framework/system/input/sys_input_gesture.h</itemPath>
+            <itemPath>../../../../framework/system/input/sys_input_keyboard.h</itemPath>
+            <itemPath>../../../../framework/system/input/sys_input_listener.h</itemPath>
+            <itemPath>../../../../framework/system/input/sys_input_mouse.h</itemPath>
+            <itemPath>../../../../framework/system/input/sys_input_touch.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f1" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/int/src/sys_int_private.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../framework/system/int/sys_int.h</itemPath>
+            <itemPath>../../../../framework/system/int/sys_int_mapping.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f8" displayName="msg" projectFiles="true">
+            <logicalFolder name="f1" displayName="config" projectFiles="true">
+              <itemPath>../../../../framework/system/msg/config/sys_msg_config.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/msg/src/sys_msg_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../framework/system/msg/sys_msg.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="ports" projectFiles="true">
+            <itemPath>../../../../framework/system/ports/sys_ports.h</itemPath>
+            <itemPath>../../../../framework/system/ports/sys_ports_definitions.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../framework/system/system.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -12,6 +286,162 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f2" displayName="app" projectFiles="true">
+        <logicalFolder name="f2" displayName="emwin_gui" projectFiles="true">
+          <itemPath>../src/emwin_gui/ConfigurationSettingsDLG.c</itemPath>
+          <itemPath>../src/emwin_gui/ConfigurationUpdateDLG.c</itemPath>
+          <itemPath>../src/emwin_gui/HomePageDLG.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="system_config" projectFiles="true">
+          <logicalFolder name="f1" displayName="default" projectFiles="true">
+            <logicalFolder name="f2" displayName="bsp" projectFiles="true">
+              <itemPath>../src/system_config/default/bsp/bsp.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="framework" projectFiles="true">
+              <logicalFolder name="f1" displayName="driver" projectFiles="true">
+                <logicalFolder name="f1" displayName="spi" projectFiles="true">
+                  <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_tasks.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_api.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/driver/spi/dynamic/drv_spi_master_rm_tasks.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="gfx" projectFiles="true">
+                <logicalFolder name="f1" displayName="driver" projectFiles="true">
+                  <logicalFolder name="f1" displayName="controller" projectFiles="true">
+                    <logicalFolder name="f1" displayName="lcc" projectFiles="true">
+                      <itemPath>../src/system_config/default/framework/gfx/driver/controller/lcc/drv_gfx_lcc_generic.c</itemPath>
+                    </logicalFolder>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hal" projectFiles="true">
+                  <itemPath>../src/system_config/default/framework/gfx/hal/gfx_display_def.c</itemPath>
+                  <itemPath>../src/system_config/default/framework/gfx/hal/gfx_driver_def.c</itemPath>
+                  <itemPath>../src/system_config/default/framework/gfx/hal/gfx_processor_def.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f3" displayName="system" projectFiles="true">
+                <logicalFolder name="f1" displayName="clk" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="devcon" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S</itemPath>
+                    <itemPath>../src/system_config/default/framework/system/devcon/src/sys_devcon_cache.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f3" displayName="ports" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/default/framework/system/ports/src/sys_ports_static.c</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="third_party" projectFiles="true">
+              <logicalFolder name="f1" displayName="gfx" projectFiles="true">
+                <logicalFolder name="f1" displayName="emwin" projectFiles="true">
+                  <logicalFolder name="f3" displayName="config" projectFiles="true">
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/config/GUIConf.c</itemPath>
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/config/GUI_X_Ex.c</itemPath>
+                    <itemPath>../src/system_config/default/third_party/gfx/emwin/config/LCDConf.c</itemPath>
+                  </logicalFolder>
+                  <logicalFolder name="f2" displayName="gui" projectFiles="true">
+                    <logicalFolder name="f1" displayName="src" projectFiles="true">
+                      <itemPath>../src/system_config/default/third_party/gfx/emwin/gui/src/emwin_gui_static.c</itemPath>
+                    </logicalFolder>
+                  </logicalFolder>
+                  <logicalFolder name="f1" displayName="touch" projectFiles="true">
+                    <logicalFolder name="f1" displayName="src" projectFiles="true">
+                      <itemPath>../src/system_config/default/third_party/gfx/emwin/touch/src/emwin_touch_static.c</itemPath>
+                    </logicalFolder>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>../src/system_config/default/system_init.c</itemPath>
+            <itemPath>../src/system_config/default/system_interrupt.c</itemPath>
+            <itemPath>../src/system_config/default/system_exceptions.c</itemPath>
+            <itemPath>../src/system_config/default/system_tasks.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>../src/app.c</itemPath>
+        <itemPath>../src/main.c</itemPath>
+        <itemPath>../src/HwConfig.c</itemPath>
+        <itemPath>../src/SPI_FRAM.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f1" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="i2c" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../framework/driver/i2c/src/dynamic/drv_i2c_bb_a.c</itemPath>
+                <itemPath>../../../../framework/driver/i2c/src/dynamic/drv_i2c_bb.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="input" projectFiles="true">
+            <logicalFolder name="f1" displayName="touch" projectFiles="true">
+              <logicalFolder name="f1" displayName="mxt336t" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <itemPath>../../../../framework/driver/input/touch/mxt336t/src/drv_mxt336t.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="spi" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                <itemPath>../../../../framework/driver/spi/src/dynamic/drv_spi.c</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../framework/driver/spi/src/drv_spi_sys_queue_fifo.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="gfx" projectFiles="true">
+          <logicalFolder name="f1" displayName="hal" projectFiles="true">
+            <itemPath>../../../../framework/gfx/hal/src/gfx.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_color.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_context.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_default_impl.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_display.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_driver_interface.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_get.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_interface.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_layer.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_pixel_buffer.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_processor_interface.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_rect.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_util.c</itemPath>
+            <itemPath>../../../../framework/gfx/hal/src/gfx_set.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="system" projectFiles="true">
+          <logicalFolder name="f1" displayName="dma" projectFiles="true">
+            <itemPath>../../../../framework/system/dma/src/sys_dma.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="input" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/input/src/sys_input.c</itemPath>
+              <itemPath>../../../../framework/system/input/src/sys_input_listener.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/int/src/sys_int_pic32.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="msg" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../framework/system/msg/src/sys_msg.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -21,6 +451,10 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
+    <Elem>../..</Elem>
+    <Elem>..\src</Elem>
+    <Elem>..\src\default</Elem>
+    <Elem>..\src\system_config\default</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -38,6 +472,8 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
+            <linkerLibFileItem>../../../../bin/framework/peripheral/PIC32MZ2048EFH144_peripherals.a</linkerLibFileItem>
+            <linkerLibFileItem>../../../../bin/framework/gfx/segger_emwin/lib/emWin.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -66,7 +502,8 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/system_config/default;../src/default;../../../../framework;../src/system_config/default/framework;../src/system_config/default/bsp;../src/system_config/default/third_party/gfx/emwin/config;../../../../bin/framework/gfx/segger_emwin/inc"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -85,6 +522,9 @@
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
       </C32-AR>
+      <C32-AS>
+        <property key="generate-micro-compressed-code" value="false"/>
+      </C32-AS>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="enable-check-sections" value="false"/>
@@ -101,7 +541,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value=""/>
+        <property key="heap-size" value="4096"/>
         <property key="input-libraries" value=""/>
         <property key="linker-symbols" value=""/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
